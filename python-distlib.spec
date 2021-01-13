@@ -4,7 +4,7 @@
 
 Name:       python-distlib
 Version:	0.3.1
-Release:	1
+Release:	2
 Summary:    Low-level components of distutils2/packaging, augmented with higher-level APIs
 
 License:    Python
