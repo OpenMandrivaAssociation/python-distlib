@@ -1,34 +1,14 @@
---- distlib-0.1.9/distlib/compat.py.orig	2014-06-06 09:58:21.317560756 +0200
-+++ distlib-0.1.9/distlib/compat.py	2014-06-06 09:58:29.955611427 +0200
-@@ -17,7 +17,7 @@ if sys.version_info[0] < 3:
-     from types import FileType as file_type
-     import __builtin__ as builtins
-     import ConfigParser as configparser
--    from ._backport import shutil
-+    import shutil
-     from urlparse import urlparse, urlunparse, urljoin, urlsplit, urlunsplit
-     from urllib import (urlretrieve, quote as _quote, unquote, url2pathname,
-                         pathname2url, ContentTooShortError, splittype)
-@@ -267,7 +267,7 @@ except ImportError: # pragma: no cover
- try:
-     import sysconfig
- except ImportError: # pragma: no cover
--    from ._backport import sysconfig
-+    import sysconfig
- 
- try:
-     callable = callable
---- distlib-0.1.9/setup.py.orig	2014-06-06 10:19:13.971997156 +0200
-+++ distlib-0.1.9/setup.py	2014-06-06 10:19:20.012034150 +0200
-@@ -62,12 +62,7 @@ distutils.core.setup(
-     platforms='any',
+diff -up distlib-0.3.4/distlib/compat.py.1~ distlib-0.3.4/distlib/compat.py
+diff -up distlib-0.3.4/setup.py.1~ distlib-0.3.4/setup.py
+--- distlib-0.3.4/setup.py.1~	2022-06-14 22:12:59.068628086 +0200
++++ distlib-0.3.4/setup.py	2022-06-14 22:13:38.237785333 +0200
+@@ -61,10 +61,6 @@ distutils.core.setup(
      packages=[
-         'distlib',
--        'distlib._backport',
+         'distlib'
      ],
 -    package_data={
--        'distlib._backport': ['sysconfig.cfg'],
--        'distlib': ['t32.exe', 't64.exe', 'w32.exe', 'w64.exe'],
+-        'distlib': ['t32.exe', 't64.exe', 'w32.exe', 'w64.exe',
+-                    't64-arm.exe', 'w64-arm.exe'],
 -    },
      cmdclass={
          'test': TestCommand,
