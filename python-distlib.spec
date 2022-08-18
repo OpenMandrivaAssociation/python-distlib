@@ -10,6 +10,7 @@ Source0:	https://files.pythonhosted.org/packages/source/d/distlib/distlib-%{vers
 BuildArch:	noarch
 BuildRequires:  python-devel
 BuildRequires:	python-pip
+BuildRequires:	python-wheel
 %rename python3-%{srcname}
 
 %description
