@@ -2,7 +2,7 @@
 
 Name:		python-distlib
 Version:	0.3.6
-Release:	1
+Release:	2
 Summary:	Low-level components of distutils2/packaging, augmented with higher-level APIs
 License:	Python
 URL:		https://readthedocs.org/projects/distlib/
