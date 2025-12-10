@@ -11,6 +11,7 @@ BuildArch:	noarch
 BuildRequires:  python-devel
 BuildRequires:	python-pip
 BuildRequires:	python-wheel
+BuildRequires:  python-setuptools
 %rename python3-%{srcname}
 
 %description
