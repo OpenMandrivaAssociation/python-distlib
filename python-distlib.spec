@@ -1,7 +1,7 @@
 %global srcname distlib
 
 Name:		python-distlib
-Version:	0.3.9
+Version:	0.4.0
 Release:	1
 Summary:	Low-level components of distutils2/packaging, augmented with higher-level APIs
 License:	Python
