@@ -1,7 +1,7 @@
 %global srcname distlib
 
 Name:		python-distlib
-Version:	0.4.0
+Version:	0.4.3
 Release:	1
 Summary:	Low-level components of distutils2/packaging, augmented with higher-level APIs
 License:	Python
@@ -24,7 +24,7 @@ time saved by not having to reinvent wheels, and improved interoperability
 between tools.
 
 %prep
-%autosetup -p1 -n %{srcname}-%{version}
+%autosetup -p1 -n distlib-0.4.3
 rm distlib/*.exe
 
 %build
